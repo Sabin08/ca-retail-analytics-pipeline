@@ -1,0 +1,15 @@
+{
+	"name": "adf-ca-retail-prod",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "be4c3ab3-ba35-4914-bf57-8d3e7183564b",
+		"tenantId": "6034d6eb-961e-4dc4-878c-32397823ce25"
+	}
+}
