@@ -1,0 +1,24 @@
+{
+	"name": "df_transform_silver",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_bronze_retail_csv",
+						"type": "DatasetReference"
+					},
+					"name": "BronzeRetail"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> BronzeRetail"
+			]
+		}
+	}
+}
