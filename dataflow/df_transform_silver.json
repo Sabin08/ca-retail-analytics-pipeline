@@ -13,11 +13,16 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "FilterNulls"
+				}
+			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> BronzeRetail"
+				"     ignoreNoFilesFound: false) ~> BronzeRetail",
+				"BronzeRetail filter(!isNull(REF_DATE) && !isNull(VALUE)) ~> FilterNulls"
 			]
 		}
 	}
