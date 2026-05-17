@@ -8,11 +8,11 @@
 		"ls_adls_retailprod_accountKey": {
 			"value": ""
 		},
-		"ls_http_statcan_properties_typeProperties_url": {
-			"value": "https://www150.statcan.gc.ca"
-		},
 		"ls_adls_retailprod_properties_typeProperties_url": {
 			"value": "https://stcaretailprod01.dfs.core.windows.net/"
+		},
+		"ls_http_statcan_properties_typeProperties_url": {
+			"value": "https://www150.statcan.gc.ca"
 		},
 		"containerUri": {
 			"value": ""

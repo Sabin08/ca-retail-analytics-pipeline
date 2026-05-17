@@ -11,13 +11,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_adls_retailprod'"
 		},
-		"ls_http_statcan_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://www150.statcan.gc.ca"
-		},
 		"ls_adls_retailprod_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://stcaretailprod01.dfs.core.windows.net/"
+		},
+		"ls_http_statcan_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www150.statcan.gc.ca"
 		},
 		"containerUri": {
 			"type": "string",
@@ -49,11 +49,11 @@
 					"ls_adls_retailprod_accountKey": {
 						"value": "[parameters('ls_adls_retailprod_accountKey')]"
 					},
-					"ls_http_statcan_properties_typeProperties_url": {
-						"value": "[parameters('ls_http_statcan_properties_typeProperties_url')]"
-					},
 					"ls_adls_retailprod_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_retailprod_properties_typeProperties_url')]"
+					},
+					"ls_http_statcan_properties_typeProperties_url": {
+						"value": "[parameters('ls_http_statcan_properties_typeProperties_url')]"
 					}
 				}
 			},
