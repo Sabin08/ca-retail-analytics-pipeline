@@ -1,0 +1,18 @@
+{
+	"name": "ds_bronze_retail_zip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_retailprod",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "statcan/retail_trade",
+				"fileSystem": "bronze"
+			}
+		}
+	}
+}

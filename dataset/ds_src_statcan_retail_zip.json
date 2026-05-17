@@ -1,0 +1,17 @@
+{
+	"name": "ds_src_statcan_retail_zip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_statcan",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/n1/tbl/csv/20100081-eng.zip"
+			}
+		}
+	}
+}
