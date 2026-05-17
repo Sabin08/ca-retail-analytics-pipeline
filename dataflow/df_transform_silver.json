@@ -16,13 +16,19 @@
 			"transformations": [
 				{
 					"name": "FilterNulls"
+				},
+				{
+					"name": "CleanAndStandardize"
 				}
 			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> BronzeRetail",
-				"BronzeRetail filter(!isNull(REF_DATE) && !isNull(VALUE)) ~> FilterNulls"
+				"BronzeRetail filter(!isNull(REF_DATE) && !isNull(VALUE)) ~> FilterNulls",
+				"FilterNulls derive(REF_DATE = toString(REF_DATE),",
+				"          VALUE = toDouble(toString(VALUE)),",
+				"          GEO = trim(upper(toString(GEO)))) ~> CleanAndStandardize"
 			]
 		}
 	}
