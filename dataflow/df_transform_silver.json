@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "ds_bronze_retail_csv",
+						"referenceName": "ds_src_statcan_retail_csv",
 						"type": "DatasetReference"
 					},
 					"name": "BronzeRetail"
