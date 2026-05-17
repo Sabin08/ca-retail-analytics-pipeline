@@ -1,0 +1,20 @@
+{
+	"name": "ds_silver_retail_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_retailprod",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "statcan/retail_trade",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
